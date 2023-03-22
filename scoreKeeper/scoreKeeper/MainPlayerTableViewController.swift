@@ -2,6 +2,9 @@ import UIKit
 
 class MainPlayerTableViewController: UITableViewController {
     
+    //show players in order by score
+    // add ability to add players
+    
     var basePlayers = [Player(name: "player One", score: 100), Player(name: "Kole", score: 5), Player(name: "Someone", score: 500)]
 
     override func viewDidLoad() {
