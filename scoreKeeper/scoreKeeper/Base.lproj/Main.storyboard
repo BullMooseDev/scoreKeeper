@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1828.2442748091603" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Update Player View Controller-->
         <scene sceneID="mE1-7x-zoe">
             <objects>
-                <viewController id="c9E-em-yFz" sceneMemberID="viewController">
+                <viewController id="c9E-em-yFz" customClass="UpdatePlayerViewController" customModule="scoreKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8o-OS-KEL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,6 +145,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A7H-ab-H3a"/>
+                    <connections>
+                        <outlet property="playerNameInput" destination="Hk1-Pq-0Fo" id="vRE-Uj-DTS"/>
+                        <outlet property="playerScoreInput" destination="OXc-ia-5qB" id="wdd-rD-M9v"/>
+                        <outlet property="saveButton" destination="K8o-OS-KEL" id="F9M-vp-wQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YB-Zf-k9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
