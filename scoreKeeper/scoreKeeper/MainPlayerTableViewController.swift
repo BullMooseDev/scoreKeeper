@@ -12,7 +12,7 @@ class MainPlayerTableViewController: UITableViewController, CellDelegate {
     
     //IBAAction for steppper instead
     
-    // array of players
+    // array of players below
     var basePlayers = [Player(name: "MJ", score: 10), Player(name: "Kole", score: 5), Player(name: "Jane", score: 50)]
 
     override func viewDidLoad() {
@@ -28,9 +28,11 @@ class MainPlayerTableViewController: UITableViewController, CellDelegate {
     // create cells for players to inhabit
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath) as! PlayerCell
+        // casting required above for utilizing custom cell
         
         let player = basePlayers[indexPath.row]
         
+        // using custom cell below
         cell.playerName.text = player.name
         cell.playerScore.text = String(player.score)
         cell.playerImage.image = UIImage(systemName: "person.crop.rectangle")
@@ -39,6 +41,6 @@ class MainPlayerTableViewController: UITableViewController, CellDelegate {
     }
     
     @IBAction func stepperTapped(_ sender: UIStepper){
-        // call didset here?
+        // call didset for updating player score here?
     }
 }

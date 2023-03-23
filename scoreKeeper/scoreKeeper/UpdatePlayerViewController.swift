@@ -16,8 +16,7 @@ class UpdatePlayerViewController: UIViewController {
         
         if playerName.isEmpty || playerScore.isEmpty { return }
         
-//        basePlayers.append(Player(name: playerName, score: Int(playerScore)))
-        
+        // basePlayers.append(Player(name: playerName, score: Int(playerScore)))
         // perform unwind on save and send new object data?
     }
 }
