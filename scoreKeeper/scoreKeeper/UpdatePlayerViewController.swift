@@ -8,11 +8,16 @@ class UpdatePlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    func addPlayer(){
-        // when save button is clicked grab info from name and score and create a person object with it and append it into the player array, also perform unwind back onto table view
+    @IBAction func saveButtonTapped(){
+        guard let playerName = playerNameInput.text,
+              let playerScore = playerScoreInput.text else { return }
+        
+        if playerName.isEmpty || playerScore.isEmpty { return }
+        
+//        basePlayers.append(Player(name: playerName, score: Int(playerScore)))
+        
+        // perform unwind on save and send new object data?
     }
 }
