@@ -42,6 +42,10 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kjt-3t-e6G">
                                                     <rect key="frame" x="186" y="14" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="stepperAction:" destination="udH-Yn-3eX" eventType="valueChanged" id="vQ2-ov-wq4"/>
+                                                        <action selector="stepperTapped:" destination="slC-iS-Xyb" eventType="valueChanged" id="xjr-jZ-2St"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-gD-j7z">
                                                     <rect key="frame" x="311" y="20" width="44.333333333333314" height="20.333333333333329"/>
@@ -63,6 +67,7 @@
                                     <outlet property="playerImage" destination="7Pe-k0-ytb" id="IEF-7q-rnB"/>
                                     <outlet property="playerName" destination="frt-GQ-loA" id="CVL-Si-nNe"/>
                                     <outlet property="playerScore" destination="GrI-gD-j7z" id="1IA-6w-Jg1"/>
+                                    <outlet property="stepperOutlet" destination="kjt-3t-e6G" id="8BR-b1-YVQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -153,9 +158,11 @@
                         <outlet property="playerNameInput" destination="Hk1-Pq-0Fo" id="vRE-Uj-DTS"/>
                         <outlet property="playerScoreInput" destination="OXc-ia-5qB" id="wdd-rD-M9v"/>
                         <outlet property="saveButton" destination="K8o-OS-KEL" id="F9M-vp-wQ4"/>
+                        <segue destination="40F-81-kwb" kind="unwind" identifier="sendingPlayerUnwind" unwindAction="unwind:" id="05G-MC-Ka2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YB-Zf-k9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="40F-81-kwb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2632.8244274809158" y="12.67605633802817"/>
         </scene>

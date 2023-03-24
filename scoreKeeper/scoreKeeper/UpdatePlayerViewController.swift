@@ -6,6 +6,8 @@ class UpdatePlayerViewController: UIViewController {
     @IBOutlet var playerScoreInput: UITextField!
     @IBOutlet var saveButton: UIView!
     
+    var player: Player?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -16,7 +18,8 @@ class UpdatePlayerViewController: UIViewController {
         
         if playerName.isEmpty || playerScore.isEmpty { return }
         
-        // basePlayers.append(Player(name: playerName, score: Int(playerScore)))
-        // perform unwind on save and send new object data?
+        player = Player(name: playerName, score: Int(playerScore) ?? 0)
+        
+        performSegue(withIdentifier: "sendingPlayerUnwind", sender: self)
     }
 }
