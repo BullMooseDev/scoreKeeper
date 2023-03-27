@@ -19,6 +19,7 @@
 		0FBF20E929CB40FE00BFE387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBF20E729CB40FE00BFE387 /* LaunchScreen.storyboard */; };
 		0FD02D2C29D1ECCF00DCBCE5 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD02D2B29D1ECCF00DCBCE5 /* Games.swift */; };
 		0FD02D2E29D1EFB100DCBCE5 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD02D2D29D1EFB100DCBCE5 /* GameCell.swift */; };
+		0FD02D3029D1F2CA00DCBCE5 /* MinimalPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD02D2F29D1F2CA00DCBCE5 /* MinimalPlayerCell.swift */; };
 		0FD491D129CCB00B00C7EC3B /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD491D029CCB00B00C7EC3B /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0FBF20EA29CB40FE00BFE387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD02D2B29D1ECCF00DCBCE5 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		0FD02D2D29D1EFB100DCBCE5 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		0FD02D2F29D1F2CA00DCBCE5 /* MinimalPlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalPlayerCell.swift; sourceTree = "<group>"; };
 		0FD491D029CCB00B00C7EC3B /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				0FBF20DE29CB40FD00BFE387 /* SceneDelegate.swift */,
 				0F41786A29CB424F00E32181 /* Player.swift */,
 				0FD491D029CCB00B00C7EC3B /* PlayerCell.swift */,
+				0FD02D2F29D1F2CA00DCBCE5 /* MinimalPlayerCell.swift */,
 				0F41786E29CB581D00E32181 /* UpdatePlayerViewController.swift */,
 				0F41786C29CB431D00E32181 /* MainPlayerTableViewController.swift */,
 				0F3C63BB29D1E2C3007DF38D /* GameOptionsViewController.swift */,
@@ -161,6 +164,7 @@
 			files = (
 				0F3C63BC29D1E2C3007DF38D /* GameOptionsViewController.swift in Sources */,
 				0FBF20DD29CB40FD00BFE387 /* AppDelegate.swift in Sources */,
+				0FD02D3029D1F2CA00DCBCE5 /* MinimalPlayerCell.swift in Sources */,
 				0F41786B29CB424F00E32181 /* Player.swift in Sources */,
 				0FD02D2C29D1ECCF00DCBCE5 /* Games.swift in Sources */,
 				0FD491D129CCB00B00C7EC3B /* PlayerCell.swift in Sources */,

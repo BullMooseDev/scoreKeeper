@@ -170,109 +170,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Sg-2U-pkw" customClass="PlayerAddition" customModule="scoreKeeper" customModuleProvider="target">
-                                <rect key="frame" x="16" y="103" width="361" height="715"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Sg-2U-pkw">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="gVd-Je-8Fc">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="211"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="gVd-Je-8Fc" userLabel="Header">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="211"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sort players by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW5-Td-mW7">
-                                            <rect key="frame" x="8" y="8" width="119" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who wins?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAA-fW-sSd">
-                                            <rect key="frame" x="8" y="104" width="83" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ykn-SP-S5H">
-                                            <rect key="frame" x="8" y="37" width="213" height="32"/>
-                                            <segments>
-                                                <segment title="Highest Score"/>
-                                                <segment title="Lowest Score"/>
-                                            </segments>
-                                        </segmentedControl>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-cz-ohq">
-                                            <rect key="frame" x="8" y="133" width="213" height="32"/>
-                                            <segments>
-                                                <segment title="Highest Score"/>
-                                                <segment title="Lowest Score"/>
-                                            </segments>
-                                        </segmentedControl>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-vd-mlq">
-                                            <rect key="frame" x="141" y="183" width="79" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-6C-4rI">
+                                            <rect key="frame" x="8" y="8" width="377" height="195"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q3B-aQ-u5w">
+                                                    <rect key="frame" x="0.0" y="0.0" width="377" height="78.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sort players by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW5-Td-mW7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ykn-SP-S5H">
+                                                            <rect key="frame" x="0.0" y="28.333333333333332" width="213" height="51.333333333333343"/>
+                                                            <segments>
+                                                                <segment title="Highest Score"/>
+                                                                <segment title="Lowest Score"/>
+                                                            </segments>
+                                                        </segmentedControl>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Bi-Pz-7Rx">
+                                                    <rect key="frame" x="0.0" y="116.66666666666669" width="377" height="78.333333333333314"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who wins?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAA-fW-sSd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82.333333333333329" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-cz-ohq">
+                                                            <rect key="frame" x="0.0" y="28.333333333333329" width="213" height="51"/>
+                                                            <segments>
+                                                                <segment title="Highest Score"/>
+                                                                <segment title="Lowest Score"/>
+                                                            </segments>
+                                                        </segmentedControl>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="ykn-SP-S5H" firstAttribute="top" secondItem="gW5-Td-mW7" secondAttribute="bottom" constant="8" symbolic="YES" id="7AL-Fc-qV6"/>
-                                        <constraint firstItem="NS2-cz-ohq" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leading" constant="8" id="7xw-yk-g6d"/>
-                                        <constraint firstAttribute="trailing" secondItem="OAA-fW-sSd" secondAttribute="trailing" constant="270" id="BT9-UY-seF"/>
-                                        <constraint firstAttribute="bottom" secondItem="A4I-vd-mlq" secondAttribute="bottom" constant="7" id="J9S-bi-kIE"/>
-                                        <constraint firstItem="gW5-Td-mW7" firstAttribute="top" secondItem="gVd-Je-8Fc" secondAttribute="top" constant="8" id="NVJ-AF-Tfo"/>
-                                        <constraint firstItem="gW5-Td-mW7" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leading" constant="8" id="U40-iM-duy"/>
-                                        <constraint firstAttribute="trailing" secondItem="ykn-SP-S5H" secondAttribute="trailing" constant="140" id="UxH-Dw-Rnq"/>
-                                        <constraint firstItem="ykn-SP-S5H" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leading" constant="8" id="VJJ-2S-ZE9"/>
-                                        <constraint firstItem="OAA-fW-sSd" firstAttribute="top" secondItem="ykn-SP-S5H" secondAttribute="bottom" constant="36" id="YRN-f5-HrR"/>
-                                        <constraint firstAttribute="trailing" secondItem="gW5-Td-mW7" secondAttribute="trailing" constant="234" id="Zo1-Uo-GJh"/>
-                                        <constraint firstItem="A4I-vd-mlq" firstAttribute="top" secondItem="NS2-cz-ohq" secondAttribute="bottom" constant="19" id="dS1-ea-dL9"/>
-                                        <constraint firstItem="OAA-fW-sSd" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leading" constant="8" id="e43-Us-j3H"/>
-                                        <constraint firstAttribute="trailing" secondItem="NS2-cz-ohq" secondAttribute="trailing" constant="140" id="j8E-9O-EgI"/>
-                                        <constraint firstItem="A4I-vd-mlq" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leading" constant="141" id="rvs-oH-Cha"/>
-                                        <constraint firstAttribute="trailing" secondItem="A4I-vd-mlq" secondAttribute="trailing" constant="141" id="tNe-V5-ebV"/>
-                                        <constraint firstItem="NS2-cz-ohq" firstAttribute="top" secondItem="OAA-fW-sSd" secondAttribute="bottom" constant="8" symbolic="YES" id="zVI-kN-ogY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1CH-6C-4rI" secondAttribute="bottom" id="A7e-Gx-deh"/>
+                                        <constraint firstItem="1CH-6C-4rI" firstAttribute="top" secondItem="gVd-Je-8Fc" secondAttribute="topMargin" id="Fbd-m9-xkV"/>
+                                        <constraint firstItem="1CH-6C-4rI" firstAttribute="leading" secondItem="gVd-Je-8Fc" secondAttribute="leadingMargin" id="kvO-Mr-SOf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1CH-6C-4rI" secondAttribute="trailing" id="rYX-hW-8gh"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="122" id="vI2-ur-l9b">
-                                        <rect key="frame" x="0.0" y="261" width="361" height="122"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MinimalPlayerCell" rowHeight="122" id="vI2-ur-l9b" customClass="MinimalPlayerCell" customModule="scoreKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="261" width="393" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vI2-ur-l9b" id="wP3-Wm-0iR">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="122"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vI2-ur-l9b" id="wP3-Wm-0iR" customClass="MinimalPlayerCell" customModule="scoreKeeper" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y60-J4-eOz">
-                                                    <rect key="frame" x="20" y="36" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="Xkh-Fi-PR1"/>
-                                                        <constraint firstAttribute="width" constant="50" id="bZK-GC-Zry"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-tS-pVD">
-                                                    <rect key="frame" x="112.99999999999999" y="51" width="135.66666666666663" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S57-EQ-6kk">
+                                                    <rect key="frame" x="20" y="11" width="353" height="100"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y60-J4-eOz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Y60-J4-eOz" secondAttribute="height" id="twP-k4-Lyx"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-tS-pVD">
+                                                            <rect key="frame" x="120" y="0.0" width="233" height="100"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="LhU-tS-pVD" secondAttribute="trailing" constant="112.33333333333337" id="74q-Db-zRi"/>
-                                                <constraint firstItem="Y60-J4-eOz" firstAttribute="leading" secondItem="wP3-Wm-0iR" secondAttribute="leading" constant="20" symbolic="YES" id="Fdf-vn-uxt"/>
-                                                <constraint firstAttribute="bottom" secondItem="LhU-tS-pVD" secondAttribute="bottom" constant="41" id="NDB-WM-6Ed"/>
-                                                <constraint firstItem="LhU-tS-pVD" firstAttribute="leading" secondItem="Y60-J4-eOz" secondAttribute="trailing" constant="43" id="ggQ-qU-uLe"/>
-                                                <constraint firstAttribute="bottom" secondItem="Y60-J4-eOz" secondAttribute="bottom" constant="36" id="goJ-lZ-QzI"/>
-                                                <constraint firstItem="LhU-tS-pVD" firstAttribute="top" secondItem="wP3-Wm-0iR" secondAttribute="top" constant="51" id="m43-PW-HMY"/>
-                                                <constraint firstItem="Y60-J4-eOz" firstAttribute="top" secondItem="wP3-Wm-0iR" secondAttribute="top" constant="36" id="m4G-5r-Hit"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="S57-EQ-6kk" secondAttribute="bottom" id="0UG-Vo-ATK"/>
+                                                <constraint firstItem="S57-EQ-6kk" firstAttribute="top" secondItem="wP3-Wm-0iR" secondAttribute="topMargin" id="Lgh-2d-2FQ"/>
+                                                <constraint firstItem="S57-EQ-6kk" firstAttribute="leading" secondItem="wP3-Wm-0iR" secondAttribute="leadingMargin" id="YCz-Yy-FTH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="S57-EQ-6kk" secondAttribute="trailing" id="dO2-9Y-37Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerImage" destination="Y60-J4-eOz" id="2gR-HR-cw6"/>
+                                            <outlet property="playerNameLabel" destination="LhU-tS-pVD" id="OtY-ab-qfW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7KN-i7-S20" id="pbk-bC-JwY"/>
+                                    <outlet property="delegate" destination="7KN-i7-S20" id="FKH-gv-OLx"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lKa-N8-lyf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Sg-2U-pkw" firstAttribute="bottom" secondItem="uVZ-xS-Ylf" secondAttribute="bottom" id="865-Yz-9PA"/>
+                            <constraint firstItem="lKa-N8-lyf" firstAttribute="trailing" secondItem="4Sg-2U-pkw" secondAttribute="trailing" id="Vu8-1q-qjY"/>
+                            <constraint firstItem="4Sg-2U-pkw" firstAttribute="top" secondItem="lKa-N8-lyf" secondAttribute="top" id="afx-EA-ifG"/>
+                            <constraint firstItem="4Sg-2U-pkw" firstAttribute="leading" secondItem="lKa-N8-lyf" secondAttribute="leading" id="rbH-ws-8W7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qjQ-pL-mua">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wva-ZD-tOC"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="4Sg-2U-pkw" id="hF1-Ni-kY9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myc-pZ-uZ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
