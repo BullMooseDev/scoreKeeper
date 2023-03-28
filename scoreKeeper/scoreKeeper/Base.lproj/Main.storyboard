@@ -282,13 +282,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qjQ-pL-mua">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wva-ZD-tOC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wva-ZD-tOC">
+                            <connections>
+                                <segue destination="Z8b-u5-DSy" kind="unwind" unwindAction="unwind:" id="MiY-CB-qGf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="4Sg-2U-pkw" id="hF1-Ni-kY9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myc-pZ-uZ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Z8b-u5-DSy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2632.8244274809158" y="679.57746478873241"/>
         </scene>
