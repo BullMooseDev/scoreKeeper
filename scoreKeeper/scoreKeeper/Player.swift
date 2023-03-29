@@ -1,6 +1,6 @@
 import Foundation
 
-struct Player {
+struct Player: Hashable {
     var name: String
     var score: Int
 }

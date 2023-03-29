@@ -23,7 +23,20 @@ class GameListTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    
+    @IBSegueAction func addGame(_ coder: NSCoder) -> GameOptionsViewController? {
+        return GameOptionsViewController(coder: coder)
+    }
+    
+    
+    @IBSegueAction func gameEdit(_ coder: NSCoder, sender: Any?) -> GameOptionsViewController? {
+        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else { fatalError("busted")}
+        
+        return GameOptionsViewController(coder: coder, game: gamesList[indexPath.row])
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
