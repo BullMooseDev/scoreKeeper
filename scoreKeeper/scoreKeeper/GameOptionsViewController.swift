@@ -72,19 +72,19 @@ class GameOptionsViewController: UIViewController, UITableViewDataSource, UITabl
         game.players.insert({player}())
     }
     
-    @IBAction func unwindToMainGameView(segue: UIStoryboardSegue) {
-        guard segue.identifier == "SaveGameUnwind",
-        let sourceViewController = segue.source as? GameOptionsViewController else { return }
-
-        if let selectedIndexPath = tableView.indexPathForSelectedRow {
-            gamesList[selectedIndexPath.row] = game
-            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
-        } else {
-            let newIndexPath = IndexPath(row: gamesList.count, section: 0)
-            gamesList.append(game)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
-        }
-        
-        print("unwind clicked")
-    }
+//    @IBAction func unwindToMainGameView(segue: UIStoryboardSegue) {
+//        guard segue.identifier == "SaveGameUnwind",
+//        let sourceViewController = segue.source as? GameOptionsViewController else { return }
+//
+//        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+//            gamesList[selectedIndexPath.row] = game
+//            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+//        } else {
+//            let newIndexPath = IndexPath(row: gamesList.count, section: 0)
+//            gamesList.append(game)
+//            tableView.insertRows(at: [newIndexPath], with: .automatic)
+//        }
+//
+//        print("unwind clicked")
+//    }
 }

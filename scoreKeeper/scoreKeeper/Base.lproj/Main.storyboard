@@ -310,8 +310,7 @@
                     <navigationItem key="navigationItem" id="qjQ-pL-mua">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wva-ZD-tOC">
                             <connections>
-                                <action selector="saveButtonTapped:" destination="7KN-i7-S20" id="QN1-ad-njR"/>
-                                <segue destination="Z8b-u5-DSy" kind="unwind" unwindAction="unwindToMainGameViewWithSegue:" id="C4F-qK-N1h"/>
+                                <segue destination="Z8b-u5-DSy" kind="unwind" identifier="SaveGameUnwind" unwindAction="unwindToMainGameViewWithSegue:" id="wfB-1m-iz8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

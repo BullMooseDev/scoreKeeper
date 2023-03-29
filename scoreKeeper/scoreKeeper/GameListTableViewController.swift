@@ -36,6 +36,22 @@ class GameListTableViewController: UITableViewController {
         return GameOptionsViewController(coder: coder, game: gamesList[indexPath.row])
     }
     
+    @IBAction func unwindToMainGameView(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SaveGameUnwind",
+        let sourceViewController = segue.source as? GameOptionsViewController else { return }
+
+        let game = sourceViewController.game
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+           gamesList[selectedIndexPath.row] = game
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        } else {
+            let newIndexPath = IndexPath(row: gamesList.count, section: 0)
+           gamesList.append(game)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+        // update game option as well from here
+    }
     
     /*
     // Override to support conditional editing of the table view.
