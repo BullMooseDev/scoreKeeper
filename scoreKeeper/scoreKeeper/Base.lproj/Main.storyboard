@@ -237,7 +237,8 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
-                                                                <action selector="gameTitleNamr:" destination="7KN-i7-S20" eventType="valueChanged" id="fJI-hS-BjA"/>
+                                                                <action selector="gameTitleChanged:" destination="7KN-i7-S20" eventType="primaryActionTriggered" id="aj5-Q6-wVE"/>
+                                                                <action selector="gameTitleChanged:" destination="7KN-i7-S20" eventType="editingChanged" id="lMW-Ij-I4t"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>

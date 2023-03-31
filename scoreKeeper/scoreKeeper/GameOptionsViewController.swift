@@ -63,6 +63,10 @@ class GameOptionsViewController: UIViewController, UITableViewDataSource, UITabl
         //add guard statement and maybe alert user to emtpy field
     }
     
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard tableView.indexPathForSelectedRow != nil else { return }
         
