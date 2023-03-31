@@ -86,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-rR-d6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1828.2442748091603" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="2633" y="5"/>
         </scene>
         <!--Game List Table View Controller-->
         <scene sceneID="eg8-jX-HFG">
@@ -142,7 +142,7 @@
                                     <outlet property="gameImage" destination="kJF-BV-148" id="g1h-fm-Eul"/>
                                     <outlet property="gameScore" destination="NcE-Nn-txw" id="nih-ci-x8X"/>
                                     <outlet property="gameTitle" destination="NGq-uh-1t8" id="Tc6-I1-2OD"/>
-                                    <segue destination="7KN-i7-S20" kind="show" destinationCreationSelector="gameEdit:sender:" id="W4q-Av-Kxw"/>
+                                    <segue destination="slC-iS-Xyb" kind="show" destinationCreationSelector="gamePlayersEdit:sender:" id="XMq-Yj-TH0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -161,7 +161,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WN2-7E-Dpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826.7175572519084" y="679.57746478873241"/>
+            <point key="canvasLocation" x="1828" y="680"/>
         </scene>
         <!--Game Options View Controller-->
         <scene sceneID="bgc-Ch-iwp">
@@ -401,7 +401,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YB-Zf-k9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="40F-81-kwb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2632.8244274809158" y="12.67605633802817"/>
+            <point key="canvasLocation" x="3440" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kf4-Sf-5q2">
@@ -419,7 +419,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPl-4J-xFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.52671755725191" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="1827" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lc9-yW-9yf">
@@ -441,7 +441,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W4q-Av-Kxw"/>
+        <segue reference="h4c-Ko-Rzb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person.crop.rectangle" catalog="system" width="128" height="93"/>

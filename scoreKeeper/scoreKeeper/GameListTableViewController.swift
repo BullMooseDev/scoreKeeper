@@ -30,12 +30,14 @@ class GameListTableViewController: UITableViewController {
     }
     
     
-    @IBSegueAction func gameEdit(_ coder: NSCoder, sender: Any?) -> GameOptionsViewController? {
+    @IBSegueAction func gamePlayersEdit(_ coder: NSCoder, sender: Any?) -> MainPlayerTableViewController? {
         guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else { fatalError("busted")}
         
-        return GameOptionsViewController(coder: coder, game: gamesList[indexPath.row])
+        let vc = MainPlayerTableViewController(coder: coder)
         
-        // change game edit screen to edit the score of the players screen
+        vc?.basePlayers = Array(gamesList[indexPath.row].players)
+        
+        return vc
     }
     
     @IBAction func unwindToMainGameView(segue: UIStoryboardSegue) {

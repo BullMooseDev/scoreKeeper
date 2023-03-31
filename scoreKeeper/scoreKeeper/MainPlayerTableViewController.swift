@@ -49,6 +49,8 @@ class MainPlayerTableViewController: UITableViewController, CellDelegate {
         // call didset for updating player score here?
         // didSet(score: Int(sender.value), for: <#T##Int#>)
        // print("stepper tapped at \()")
+        tableView.reloadData()
+        basePlayers.sort(by: { $0.score > $1.score })
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

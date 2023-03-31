@@ -46,8 +46,8 @@
             filePath = "scoreKeeper/GameListTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "unwindToMainGameView(segue:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -65,6 +65,22 @@
             startingLineNumber = "61"
             endingLineNumber = "61"
             landmarkName = "gameTitleChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02C8DB3F-9CAB-4E26-8C7D-91980F2F0E69"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "scoreKeeper/MainPlayerTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "stepperTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
